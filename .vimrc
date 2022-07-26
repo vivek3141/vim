@@ -4,6 +4,7 @@ set shiftwidth=4
 set tabstop=4
 set nu
 set cursorline
+set splitbelow
 call plug#begin('~/.vim/plugged')
 Plug 'kaicataldo/material.vim'
 Plug 'vim-airline/vim-airline'
@@ -12,10 +13,12 @@ Plug 'pondrejk/vim-readability'
 Plug 'vim-python/python-syntax'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'airblade/vim-gitgutter'
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'dracula/vim', { 'as': 'dracula' }
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-scripts/bnf.vim'
+Plug 'morhetz/gruvbox'
+Plug 'tikhomirov/vim-glsl'
 call plug#end()
 autocmd BufRead *.py setlocal colorcolumn=0
 let g:pymode = 1
@@ -48,5 +51,5 @@ set backspace=indent,eol,start
 set t_Co=256  
 "set background=dark
 "colorscheme PaperColor
-
 colorscheme material
+"colorscheme gruvbox
